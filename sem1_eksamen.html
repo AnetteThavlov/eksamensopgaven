@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CDN (Content Delivery Network) fra Bootstrap (CSS)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--HUSK at indsætte egen css efter bootstrap-CDN-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--Responsive viewport meta tag fra Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Anette Thavlov - 1. semester - Eksamen</title>
+
+</head>
+
+<body>
+
+    <!--DIV med nav-bar top-->
+    <div class="container mt-6 px-sm-4 px-md-0">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/anettethavlov_logo_tvaerformat.svg" class="img-fluid" width="200px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studie.html">Studie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="om.html">Om mig</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" a href="https://www.linkedin.com/in/anette-thavlov-2a28907a/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-linkedin" viewbox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--"Til toppen" knap-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--"Til toppen" knap-->
+
+    <div class="container mb-4">
+        <div class="link row mt-3 ml-0 ml-sm-2">
+            <a href="#" class="previous" onclick="history.back()">&laquo; Tilbage</a>
+        </div>
+    </div>
+
+    <!--Container med indhold-->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="container-fluid text-center text-lg-start">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a class="previous ml-0 ml-sm-2" href="sem1-flow1.html">Flow 1</a>
+                        <a class="previous " href="sem1-flow2.html">Flow 2</a>
+                        <a class="previous" href="sem1-flow3.html">Flow 3</a>
+                        <a class="previous" href="sem1-flow4.html">Flow 4</a>
+                        <a class="previous" style="color: #e8c284;" href="javascript:void(0)">Eksamensopgave</a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="mt-2 mb-3">
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #e8c284;" height="auto">
+                <h3>Eksamen - Projektbeskrivelsen</h3>
+                <p>Opgaven lyder på at jeg skal redesigne mit website, som udgør mit nuværende portfolio. Mit nuværende
+                    portfolio blev produceret på Flow 2 på 1. semester. </p>
+                <p>Med udgangspunkt I hvad jeg har lært i løbet af 1. semester på Multimediedesign-uddannelsen, skal jeg
+                    redesigne mit Portfolio indeholdende det jeg løbende har arbejdet med, samt fremover det arbejde jeg
+                    kommer til at udføre på de kommende semestre.</p>
+                <button input type="submit"
+                    onclick="window.open('http://anettethavlov.com/Portfolio/'); return true;">Portfolio - Flow
+                    2</button>
+                <button input type="submit"
+                    onclick="window.open('./images/Eksamensopgave_MUL_1sem_2021.pdf'); return true;">Eksamensopgave-beskrivelsen</button>
+                <br>
+                <br>
+                <p>Alle delopgaver til opgaven vil blive gennemgået nedenfor på denne side.</p>
+
+            </div>
+
+            <!--DIV med video-->
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <video class="video-fluid z-depth-1" style="width: 100%;" controls loop autoplay muted>
+                        <source src="./images/Anette_Thavlov.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DIV uden indhold-->
+    <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+    <div class="container mb-4">
+        <div class="row">
+
+            <div class="container-fluid text-center text-lg-start">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a class="previous ml-0 ml-sm-2" href="#projektstyring">Projektstyring</a>
+                        <a class="previous " href="#Formål">Formål</a>
+                        <a class="previous" href="#Målgruppe">Målgruppe</a>
+                        <a class="previous" href="#Brugertest">Brugertest</a>
+                        <a class="previous" href="#Mindmap">Mindmap</a>
+                        <a class="previous" href="#Moodboard">Moodboard...</a>
+                        <a class="previous" href="#Kodning">Kodning</a>
+                        <a class="previous" href="#Video">Video</a>
+                        <a class="previous" href="#Konklusion">Konklusion</a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="mt-2 mb-3">
+
+            <!--DIV - Projektstyring-->
+
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-2 p-0"><a id="Projektstyring">Projektstyring</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/WBS.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-4 p-4 pb-1" style="background-color: #abc3c7;"
+                height="auto">
+                <h4>WBS</h4>
+                <p> I starten af min planlægningsfase lavede jeg en WBS for at nedbryde mine arbejdsopgaver til de
+                    arbejdspakker som jeg skal lave for at komme i mål med opgaven.</p>
+                <h4>Gantt Chart</h4>
+                <p> Jeg overførte mit WBS til et Gantt Chart for at få bedre overblik over alle elementer i projektet.
+                    Jeg lavede det som en grafisk tidsplan med start og slutdatoer for de enkelte opgaver.</p>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/Projektstyring.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--Gruppe med billede - tekst - billede-->
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/Sitemap.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="block-text col-sm-12 col-md-12 col-lg-4 p-4" style="background-color: #e8c284;" height="auto">
+                <h4>Sitemap</h4>
+                <p> For at få overblik over hvor mange sider min Portfolio indeholder og for at få overblik over dens
+                    hiraki lavede jeg et sitemap.</p>
+                <h4>Skitser</h4>
+                <p> Den indledende fase til selve opbygningen af siderne kom igennem skitser. Skitser til navigation og
+                    brug af links og knapper. </p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/skitser.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--Gruppe med billede - tekst - billede-->
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/wireframe.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="block-text col-sm-12 col-md-12 col-lg-4 p-4 pb-2" style="background-color: #abc3c7;"
+                height="auto">
+                <h4>Wireframes</h4>
+                <p> For at få et godt webdesign lavede jeg wireframes i Adobe XD. Jeg lavede et enkelt udkast fordi jeg
+                    godt vidste at det blev det grafiske udtryk og indholdet på siden der ville blive det centrale
+                    fokuspunkt.</p>
+                <h4>Kortsorteringstest</h4>
+                <p> Min testperson udførte testen stort set på den måde som jeg på forhånd havde opdelt kategorierne.
+                    Enkelte kort blev sat forkert pga. manglende viden om studiet.
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/kortsorteringstest.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Formål-->
+
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Formål">Formål</a></h3>
+
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/anettethavlov_profil_3.JPG" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #e8c284;" height="auto">
+                <h4>Formål med hjemmesiden</h4>
+                <p> Jeg vil gerne have et Portfolio der afspejler mine kompetencer. Dem jeg allerede har med mig men
+                    især de nye der kommer til igennem Multimediedesign-studiet. </p>
+                <p> Jeg håber på, at dem der besøger min hjemmesideside, vil blive nysgerrige på mig som
+                    Mulitmediedesigner og se mig som en evt. samarbejdspartner og hovedformålet vil være at få de
+                    besøgende til at udfylde min kontaktformular, min ”call-to-action” (CTA).
+                </p>
+                <p> Mit design på siden og mit grafiske indhold skulle gerne kunne fange folks opmærksomhed og motiverer
+                    dem til at klikke. Jeg har placeret mine CTAér flere steder på min forside i håbet om at de ikke er
+                    til at overse!</p>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Målgruppe-->
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Målgruppe">Målgruppe</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/Målgruppe.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-4 p-4" style="background-color: #e8c284;" height="auto">
+                <h4>Målgruppe</h4>
+                <p> Min primære målgruppe er en leder eller en mellemleder. En der via sin stilling vil kunne ansætte og
+                    have brug for en Multimediedesign-praktikant. <br> Personen søger efter en medarbejder der kan
+                    varetage mange dele af en grafisk produktion indenfor digitale opsætninger men også på de trykte
+                    medier.
+                </p>
+                <p> Min sekundære målgruppe er lærere på Multimediedesign-uddannelsen. Her kan de få et overblik og min
+                    kunnen og udvikling igennem studiets forløb.</p>
+                <p>For at få en mere dybdegående redegørelse for min målgruppe, klik <a href="./images/Målgruppe.pdf"
+                        target="_blank"> her</a></p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/Målgruppe2.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Brugertest-->
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Brugertest">Brugertest</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/brugertest.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #abc3c7;" height="auto">
+                <h4>Brugertest</h4>
+                <p> Jeg oprettede et spørgeskema igennem Google Docs og sendte ud til 3 potentielle målgrupper, en
+                    Direktør, en Salgs- og marketingsassistent og en Workspace and community manager.</p>
+                <p>Se spørgeskemaet og svar <a
+                        href="https://docs.google.com/forms/d/1HYbJEaLOtoQJgpy-C_ZB6NRon1wOTFMPPN22wbx34G0/edit#responses"
+                        target="_blank">her</a></p>
+                <p><b> Konklusion på svarene</b></p>
+                <p class="mb-0">Negativt </p>
+                <ul>
+                    <li>Lignede for meget et CV</li>
+                    <li>Mere fokus på de ydelser jeg kan tilbyde</li>
+                    <li>Udtrykket er for ferskt</li>
+                </ul>
+                <p class="mb-0">Positivt</p>
+                <ul>
+                    <li>Nemt at finde mine kontaktoplysninger</li>
+                    <li>Det er nemt at se hvad jeg beskæftiger mig med</li>
+                </ul>
+                <p><b> Udfordring</b></p>
+                <p>Ved mit spørgsmål ang. hvad der er vigtigst at fremhæve ved en praktik-ansættelse, havde alle 3
+                    testpersoner hver deres svar. Konklusionen må derfor være at have alt med for ikke at udelukke en
+                    mulig
+                    arbejdsgiver.</p>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Mindmap-->
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Mindmap">Mindmap</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/mindmap.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #e8c284;" height="auto">
+                <h4>Mindmap</h4>
+                <p> Min idégeneringsproces startede på Pinterest.dk hvor jeg søgte inspiration ved at søge på
+                    ”Portfolio”, ”Identity”, ”Creativity” og meget mere.</p>
+
+                <p> Desuden søgte jeg inspiration fra andre Multimediedesigner-hjemmesider.</p>
+                <p> Jeg satte mig ned med et stykke papir og en pen og prøvede at sætte mine tanker ned på skrift.</p>
+                <p> Siden med ”Studie” skulle være overskuelig og ikke virke for tung. Det skal være nemt og
+                    overskueligt at navigerer rundt på siderne. Siden er primært til brug ved eksamen men for
+                    uforstående besøgende, så skal det hurtigt være til at forstå.</p>
+                <p> Og så vil jeg gerne have så få sider som muligt for at gøre projektet så simpelt så muligt, når jeg
+                    skal i gang med at kode hjemmesiden.
+                </p>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Mockup, stylescape og styletiles-->
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Moodboard">Moodboard, Stylescape og
+                    styletiles</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/moodboard2.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #abc3c7;" height="auto">
+                <h4>Moodboard og Stylescape</h4>
+                <p>Jeg har under hele processen tænkt at det er designet der kommer til at bære denne hjemmeside. Den
+                    skal have et klart grafisk udtryk men også spille sammen med mine kompetencer indenfor kodning.</p>
+
+                <p> Udtrykket fik jeg samlet sammen i mit moodboard efter jeg fandt et billede på Unsplash.com hvor en
+                    pige går tværs over billedet med solen skinnende lige hen over hendes hoved. Det er ikke helt
+                    tydeligt hvem hun er men der er en stemning af noget uhøjtidligt, frisk og øjeblikkeligt som
+                    tiltalte mig meget. Dette var en stemning jeg ville gå efter. Jeg fandt andre billeder med samme
+                    farvesammensætning og stemning og hurtigt blev mit moodboard skabt.</p>
+
+                <p> Ud fra de valgte billeder, teksturer og farvevalg, gik jeg videre med at forme mit stylescape. Jeg
+                    fik udarbejdet nogle grafiske elementer i Illustrator. F.eks. tog jeg det originale billede af
+                    Terazzo og vektoriserede det og gjorde det unikt ved at ændre i farverne, så det matchede min
+                    farvepalette.</p>
+
+                <p> Herfra kunne jeg også gå i gang med mit logo. Jeg brugte den grønne ”krussedulle” fra mit moodboard
+                    og tænkte den ind i logoet. Jeg prøvede først med et horizontalt logo men fandt ud af at det optog
+                    for meget plads i toppen af siden og besluttede derfor at lave det vertikalt.</p>
+
+                <p> Jeg valgte mine fonte ud fra min originale portfolio, nemlig en Serif-font der hedder ”Roboto Slab”
+                    og en Sans Serif-font der hedder ”Poppins”.</p>
+
+                <p> Under min søgning på inspiration til portfolioen faldt jeg over en side med royalty-free ikoner. Og
+                    her fandt jeg en samling ikoner som jeg har arbejdet videre med i Illustrator. Jeg har ændret i
+                    farven og form.
+                </p>
+
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/moodboard_Side_2.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #e8c284;" height="auto">
+                <h3>Styletiles</h3>
+                <br>
+                <p>At arbejde med mockups er for mig den sjove og kreative del af opbygningsfasen. Her begynder alle
+                    elementerne at samle sig og man finder hurtigt ud af hvad der fungerer og hvad der ikke gør!
+                </p>
+                <p> På dette tidspunkt havde jeg været ude og filme til videoén og samtidig tage nye profilfotos. Og jeg
+                    kunne se at det materiale jeg havde, matchede ret godt overens med mit moodboard.</p>
+                <p>Så da jeg laver mockups i photoshop kan jeg nu fornemme det kommende færdige resultat. </p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/styletiles.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Kodning-->
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Kodning">Kodning</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/laptop_kodning.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #abc3c7;" height="auto">
+                <h4>Kodning</h4>
+                <p> Her er min største udfordring…kodning, html, bootstrap, responsivt design…!</p>
+                <p>Den største udfordring for mig har været at forstå og lære dette sprog. Jeg startede ud som total
+                    ”Newbee” og med en smule frygt for ikke at kunne forstå. Jeg havde lidt undervisning af kodning med
+                    fra min Mediegrafiker-uddannelsen tilbage i 2007 men meget har ændret sig siden da og derfor tog jeg
+                    ja-hatten på og startede helt forfra.</p>
+                <p>Det har været en sjov rejse indtil nu og jeg finder stor tilfredsstillelse i at få selve kodningen i
+                    Visuel Studios ud til skærmen hvor ens layout langsom bliver udfoldet.</p>
+                <p>Med denne nye Portfolio har jeg startet ud med at koncentrere mig om at få lavet ”div-bokse” der er
+                    responsive i forhold til hinanden og forskellige skærme/devices. Herefter tog jeg fat i styling af
+                    fonte og fik nogle gode råd med på vejen af mine medstuderende.</p>
+                <p>Jeg har taget et skrift ad gangen og fokuseret på en problemstilling ad gangen. F.eks. har jeg
+                    arbejdet med en nav-bar fra Bootstrap som er responsiv, indeholdende mine undersider og et
+                    LinkedIn-ikon.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/laptop_kodning2.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #abc3c7;" height="auto">
+                <p>Henover mit forside-billede har jeg fået indsat tekst og en ”Kontakt”-knap. Både billedet og teksten
+                    er responsivt men jeg har et ønske om at udskifte billedet, ved mobilvisning, til et mere egnet
+                    ”højde-bredde”-billede. Dette har jeg ikke fundet en løsning på men arbejder videre med problemet.
+                </p>
+                <p>Jeg har arbejdet meget med tekstbokse ved siden af et billede, en svg. Illustration med gule prikker
+                    som opdeling, enkelte tekstbokse med terazzo-baggrund. Det hele enkelt og med logiske opdelinger.
+                </p>
+                <p>Efter en søgning fandt jeg en løsning på at kunne komme til toppen af siden, når du har scrollet ned
+                    på siden, så nav-baren forsvinder. Dette mener jeg er nødvendigt når jeg ikke bruger en ”Sticky”
+                    nav-bar.</p>
+                <p>Jeg har taget en standard Bootstrap kontaktformular og tilpasset den mit layout ifh. font og farver.
+                    Men jeg har endnu ikke fået selve funktionen til at virke.</p>
+                <p> Ved galleri-visningen af mine opgaver fandt jeg en hoover-effekt som jeg også fik tilpasset mit
+                    layout. Der er lidt udfordringer i den responsive visning hvor margin og padding driller. Men
+                    overordnet er
+                    det en sjov effekt som skaber lidt ”interaktion” på min side.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/laptop_kodning3.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #abc3c7;" height="auto">
+                <p>Jeg har et stort ønske at vise mit arbejde i et pop-op vindue når der klikkes på billedet. Dette har
+                    jeg endnu ikke fundet en løsning på og overvejer at åbne billederne i en ny fane indtil problemet er
+                    løst.</p>
+                <p>Den sidste udfordring jeg har løst er at jeg har oprettet en
+                    ”link”-menu før afsnittet ”Projektstyring” på denne side. Disse links henviser til det aktuelle
+                    afsnit længere nede på siden.</p>
+                <p>Status på min læringskurve mht. kodning er pt. at den er kraftigt stigende. Der er flere og flere
+                    ting der giver mening for mig og det bliver nemmere at løse de udfordringer der opstår. Jeg er
+                    blevet
+                    skarpere til at søge på de rigtige problemstillinger og det hjælper rigtig meget at sidde og kode
+                    hver dag. Det er jo så sandt når man siger at ”Øvelse gør mester!”</p>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Video-->
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Video">Video</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/anette_thavlov_futurebox.JPG" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #e8c284;" height="auto">
+                <h4>Video</h4>
+                <p> Med min præsentationsvideo har jeg haft fokus på at vise så mange facetter af mine kompetencer som
+                    muligt. Den oprindelige idé var at følge en opgave fra start til slut, f.eks. en af flow-opgaverne
+                    på 1. semester.</p>
+
+                <p> Jeg tegnede mit storyboard og tog det med ud den dag jeg skulle filme. Jeg valgte at optage mange af
+                    mine scener på DTU i Lyngby. Jeg havde udset mig en af DTU´s nye bygninger, som har en guld-farvet
+                    facade, som min baggrund, da den matchede mit moodboard rigtig godt. Jeg fik desuden mulighed for at
+                    filme inde i FutureBox som er en bygning sat sammen af en masse containere. Igen et godt match til
+                    moodboardet.</p>
+
+                <p> Jeg fik filmet flere scener, både indendørs og udendørs og fornemmede hurtigt at mit storyboard
+                    havde ændret sig til at handle om udviklingen af min egen portfolio i stedet for en allerede udført
+                    opgave.</p>
+            </div>
+
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4 pb-1" style="background-color: #e8c284;"
+                height="auto">
+                <p> Da jeg endnu ikke er så vant til at arbejde i Adobe premiere Pro valgte jeg at arbejde i Adobe
+                    Premiere Rush i stedet for. Jeg brugte dog Adobe Premiere Pro til at stabilisere mine optagelser.
+                </p>
+
+                <p> Jeg har anvendt beskæringer i mine klip, både total, halvtotal og halvnær. Jeg har gået efter at
+                    sammensætte scenerne så det virker harmonisk og balanceret. Jeg har desuden valgt at indsætte
+                    tekster for at understrege hvilke programmer jeg bruger undervejs i et sådanne projekt.</p>
+
+                <p> Som intro og outtro har jeg valgt at bruge ”Terazzo”-elementet for at skabe bro mellem videoén og
+                    hjemmesiden.</p>
+
+                <p> Jeg har anvendt bløde overgange og musik for at ophøje stemningen i videoen
+                </p>
+
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <video class="video-fluid z-depth-1" style="width: 100%;" controls loop autoplay muted>
+                        <source src="./images/videomaking.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+            <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/storyboard.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV - Konklusion-->
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-3 p-0"><a id="Konklusion">Konklusion</a></h3>
+
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;" height="auto">
+                <div class="container-fluid">
+                    <img src="./images/anettethavlov_profil_5.JPG" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #abc3c7;" height="auto">
+                <h4>Konklusion</h4>
+                <p> Nu har jeg skrevet det sidste slut tag. I hvert fald i denne omgang. For mit portfolio vil jo
+                    udvikle sig, sammen med mig.</p>
+
+                <p> Overordnet syntes jeg at jeg er kommet godt i mål med mit portfolio. Jeg er glad for at jeg fik lagt
+                    en
+                    god plan for mit projekt. Især mit WBS og Gannt Chart har jeg lænet mig meget op ad og fulgt
+                    slavisk.
+                    Det har givet mig en ro til at kunne have overskud til at finpudse de små detaljer.</p>
+
+                <p> At jeg også brugte en del tid på at tænke over mit farvetema og tænke detaljerne ind i mit foto- og
+                    video-shoot har resulteret i et harmonisk udtryk med en gennemgående rød tråd.</p>
+
+                <p> Jeg håber meget på at kunne få mine test-personer til at lave en ny test på mit nye portfolio for at
+                    se
+                    om de kan se, at jeg har lyttet til dem.</p>
+
+                <p> Mange af de ønsker jeg havde til min Portfolio er næsten alle lykkedes og jeg kan se at jeg har
+                    rykket mig meget i min forståelse af at kode og forstå de responsive regler. Jeg ved at jeg kan få
+                    proppet
+                    en masse nye fede effekter ind på siden i fremtiden i takt med at vi får det introduceret på de
+                    næste
+                    semestre.
+                </p>
+
+            </div>
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+        </div>
+    </div>
+
+    <!--DIV uden indhold-->
+    <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+    <!--DIV uden indhold-->
+    <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+    <!--DIV med footer-->
+    <footer class="mt-5 p-4" style="background: #01473f; text-align:center;">
+        <span style="color: white;">&copy; Anette Thavlov 2021</span>
+    </footer>
+    <!--Bootstrap Javascript plugin - skal altid ligge nederst på siden lige inden slut-body tag-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

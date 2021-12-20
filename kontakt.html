@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CDN (Content Delivery Network) fra Bootstrap (CSS)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--HUSK at indsætte egen css efter bootstrap-CDN-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--Responsive viewport meta tag fra Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Anette Thavlov - Kontakt</title>
+
+</head>
+
+<body>
+
+    <!--DIV med nav-bar top-->
+    <div class="container mt-6 px-sm-4 px-md-0">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/anettethavlov_logo_tvaerformat.svg" class="img-fluid" width="200px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studie.html">Studie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="om.html">Om mig</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #e8c284;" href="javascript:void(0)">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" a href="https://www.linkedin.com/in/anette-thavlov-2a28907a/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-linkedin" viewbox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+      <!--"Til toppen" knap-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+      <!--"Til toppen" knap-->
+
+    <div class="container mb-4">
+        <div class="link row mt-3 ml-0 ml-sm-2">
+            <a href="#" class="previous" onclick="history.back()">&laquo; Tilbage</a>
+        </div>
+    </div>
+
+
+    <!--Container med indhold-->
+    <div class="container">
+        <div class="row">
+
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-2 p-0">Kontakt</h3>
+            <hr class="mt-2 mb-3">
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV med billede-->
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;">
+                <div class="container-fluid">
+                    <img src="./images/skitsebog.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #e8c284;" height="auto">
+
+
+                <!--Section: Contact v.2-->
+                <section class="mb-2">
+
+                    <!--Section heading-->
+                    <h3 class="h1-responsive font-weight-bold text-center my-2">Har du spørgsmål?</h3>
+                    <!--Section description-->
+                    <p class="text-center w-responsive mx-auto mb-2">Tøv ikke med at kontakte
+                        mig!</p>
+
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="mb-md-0 mb-2">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form pb-2">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Dit navn</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form pb-2">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Din e-mail</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form pb-2">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" class="">Dit emne</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+
+                                        <div class="md-form pb-2">
+                                            <textarea type="text" id="message" name="message" rows="2"
+                                                class="form-control md-textarea"></textarea>
+                                            <label for="message">Din besked</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                            </form>
+
+                            <div class="text-center text-md-left tm-activity-block-text">
+                                <button onclick="document.getElementById('contact-form').submit();">Send din
+                                    besked</button>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+
+                </section>
+                <!--Section: Contact v.2-->
+
+            </div>
+
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-1">Jeg ser frem til at høre fra dig :0)</h3>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV med prikker-->
+            <div class="col-sm-12 col-md-12 col-lg-12 m-0" style="padding: 0px;" height="auto">
+                <img src="./images/prikker_aflang.svg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--DIV med footer-->
+    <footer class="mt-5 p-4" style="background: #01473f; text-align:center;">
+        <span style="color: white;">&copy; Anette Thavlov 2021</span>
+    </footer>
+    <!--Bootstrap Javascript plugin - skal altid ligge nederst på siden lige inden slut-body tag-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

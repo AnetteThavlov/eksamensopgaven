@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CDN (Content Delivery Network) fra Bootstrap (CSS)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--HUSK at indsætte egen css efter bootstrap-CDN-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--Responsive viewport meta tag fra Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Anette Thavlov - Om mig</title>
+
+</head>
+
+<body>
+
+    <!--DIV med nav-bar top-->
+    <div class="container mt-6 px-sm-4 px-md-0">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/anettethavlov_logo_tvaerformat.svg" class="img-fluid" width="200px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studie.html">Studie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #e8c284;" href="javascript:void(0)">Om mig</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" a href="https://www.linkedin.com/in/anette-thavlov-2a28907a/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-linkedin" viewbox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--"Til toppen" knap-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--"Til toppen" knap-->
+
+    <div class="container mb-4">
+        <div class="link row mt-3 ml-0 ml-sm-2">
+            <a href="#" class="previous" onclick="history.back()">&laquo; Tilbage</a>
+        </div>
+    </div>
+
+    <!--Container med indhold-->
+    <div class="container mb-2">
+        <div class="row">
+
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-12 col-lg-6 p-4" style="background-color: #e8c284;" height="auto">
+                <h3>"Hvad laver du så....?"</h3>
+                <p>Ja, det er det mest almindelige spørgsmål jeg får når jeg fortæller at jeg
+                    arbejder med <mark>grafisk layout.</mark> Men sagen er den at hvis jeg skal fortælle om ALT det jeg
+                    laver, så vil det tage noget tid at komme rundt om det hele!</p>
+
+                <p>Som nyuddannet <mark>mediegrafiker,</mark> tilbage i 2007, blev jeg sat til at sætte tekst og
+                    billeder op, f.eks. til plakater, brochurer og bøger. Alt hvad der efterhånden er muligt at få
+                    trykt, har jeg arbejdet med, f.eks. messe-materiale, brevpapir, bildekorationer...you name it!,
+                    Men som årene er gået har brugerfladerne ændret sig til også at være mere digitalt.</p>
+
+                <p>Derfor besluttede jeg mig for at blive opdateret i forhold til digitale brugerflader og startede på
+                    <mark>Multimediedesign-uddannelsen</mark> i sommeren 2021. <br> Læs mere om
+                    Multimediedesign-uddannelsen <a href="studie.html"> her</a>
+                </p>
+
+                <p> Her ved udgangen af 1. semester har jeg allerede fået fyldt min <mark>digitale værktøjskasse</mark>
+                    op med nye erhvervskompetencer, programmer og en masse motivation! </p>
+            </div>
+
+            <!--DIV med billede-->
+            <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 0px;">
+                <div class="container-fluid">
+                    <img src="./images/anettethavlov_profil_4.JPG" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DIV med baggrundsbillede-->
+    <div class="container mb-4">
+        <div class="row">
+
+            <h3 class="fw-light text-center text-lg-start mt-4 mb-2 p-0">Mine kompetencer</h3>
+            <hr class="mt-2 mb-3">
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-6 col-lg-4 p-4" height="auto">
+                <h3><img src="./images/ikoner_pen.svg" alt="Image" class="tm-activity-img"
+                        style="height: 2rem; margin-right: 1rem;">Grafik, foto og redigering</h3>
+                <p>Billeder og grafik er en stor del af en fortælling, de er med til at udtrykke stemninger og
+                    budskaber.
+                    Jeg kan hjælpe med at tage dine næste fotos eller skabe dine unikke illustrationer.
+                </p>
+            </div>
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-6 col-lg-4 p-4" height="auto">
+                <h3><img src="./images/ikoner_kode.svg" alt="Image" class="tm-activity-img"
+                        style="height: 2rem; margin-right: 1rem;">Hjemmeside, Apps og UX</h3>
+                <p>Skal du have lavet en ny hjemmeside og/eller App, så lad mig hjælpe dig. Din hjemmeside er dit
+                    visitkort og alle elementer skal afspejle netop din virksomhed.</p>
+            </div>
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-6 col-lg-4 p-4" height="auto">
+                <h3><img src="./images/ikoner_video_kode kopi.svg" alt="Image" class="tm-activity-img"
+                        style="height: 2rem; margin-right: 1rem;">Videoproduktion</h3>
+                <p>Få skabt en målrettet opmærksomhed til din virksomhed igennem videoer. Jeg tilbyder at lave alt fra
+                    korte SoMe-videoer til længere præsentationsvideoer.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12"
+                style="padding: 40px 0px 0px 0px; height: auto; background-image: url(./images/terazzo.svg); background-size: auto;">
+                <div class="row mx-0">
+
+                    <div class="col-lg-6">
+                        <div class="tm-activity-block mx-2" style="height: fit-content;">
+                            <div class="tm-activity-img-container">
+                                <img src="./images/ikoner_stjerne.svg" alt="Image" class="tm-activity-img" />
+                            </div>
+                            <div class="tm-activity-block-text">
+                                <h3>Hard facts!</h3>
+                                <ul>
+                                    <li>42 år</li>
+                                    <li>Gift med Anders og har 2 piger på hhv. 6 og 10 år</li>
+                                    <li>Bor i 2880 Bagsværd</li>
+                                    <li>Visuelt tænkende</li>
+                                    <li>Hobby-fotograf</li>
+                                    <li>Udadvendt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="tm-activity-block mx-2" style="height: fit-content;">
+                            <div class="tm-activity-img-container ">
+                                <img src="./images/ikoner_megafon_megafon.svg" alt="Image" class="tm-activity-img" />
+                            </div>
+                            <div class="tm-activity-block-text">
+                                <h3>Fun facts!</h3>
+                                <ul>
+                                    <li>Soccermom</li>
+                                    <li>Afhængig af lakrids</li>
+                                    <li>Bruger størrelse 41 i sko</li>
+                                    <li>Elsker farven grøn</li>
+                                    <li>Skal helst have et kreativt projekt igang</li>
+                                    <li>Jeg ved en masse om papir!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--DIV uden indhold-->
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: transparent; height: 25px;"></div>
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-6 col-lg-4 p-4" height="auto" style="background-color: #e8c284;">
+                <h3>Færdigheder</h3>
+                <ul>
+                    <li>Grafisk design</li>
+                    <li>Idéudvikling</li>
+                    <li>Illustrationer</li>
+                    <li>Emballage-design</li>
+                    <li>Folie- og etiketteprint</li>
+                    <li>Prægning og klichéfremstilling</li>
+                    <li>Layout</li>
+                    <li>Rentegning</li>
+                    <li>Fotografi</li>
+                    <li>Billedbehandling</li>
+                    <li>Online design</li>
+                    <li>Video</li>
+                </ul>
+            </div>
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-6 col-lg-4 p-4" height="auto" style="background-color: #e8c284;">
+                <h3>Programmer</h3>
+                <ul>
+                    <li>Adobe InDesign - Superbruger</li>
+                    <li>Adobe Illustrator - Superbruger</li>
+                    <li>Adobe Photoshop - Superbruger</li>
+                    <li>Adobe Acrobat DC - Superbruger</li>
+                    <li>Word, Excel og PowerPoint</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Adobe Premiere Rush</li>
+                    <li>Adobe XD</li>
+                    <li>Visuel Studie Code</li>
+                    <li>Bootstrap</li>
+                </ul>
+
+            </div>
+
+            <!--DIV med tekst indhold-->
+            <div class="block-text col-sm-12 col-md-6 col-lg-4 p-4" height="auto" style="background-color: #e8c284;">
+                <h3>Uddannelse</h3>
+                <ul>
+                    <li>Mediegrafiker‐Uddannelsen; <br> Københanvs Tekniske Skole <br>
+                        (Antaget med bronzemedalje) 2004 ‐ 2007</li>
+                    <li>HGS; Lyngby Uddannelses Center 2001</li>
+                    <li>Højskole; Thorstedlund Kunsthøjskole 2001</li>
+                    <li>Matematisk studentereksamen; Borupgaard Amtsgymnasium 1996 ‐ 1999</li>
+                </ul>
+                <h3>Kurser</h3>
+                <ul>
+                    <li>2019 - Digital markedsføring kursus</li>
+                    <li>2019 - Wordpress kursus</li>
+                    <li>2019 - Webtilgængelighed I Adobe Acrobat og InDesign</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--DIV med footer-->
+    <footer class="mt-5 p-4" style="background: #01473f; text-align:center;">
+        <span style="color: white;">&copy; Anette Thavlov 2021</span>
+    </footer>
+    <!--Bootstrap Javascript plugin - skal altid ligge nederst på siden lige inden slut-body tag-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
